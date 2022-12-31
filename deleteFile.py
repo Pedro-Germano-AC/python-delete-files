@@ -1,10 +1,7 @@
 import os
-# import sys
-# import shutil
 
 file_path = '/Users/'+os.getlogin()+'/Downloads/'
 files = os.listdir(file_path)
-# print(files)
 
 for item in files:
     if os.path.isfile(os.path.join(file_path, item)):

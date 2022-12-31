@@ -12,11 +12,11 @@ for item in files:
         if os.path.isfile(os.path.join(file_path, item)):
                 try:
                     os.remove(os.path.join(file_path, item))
-                    print("Arquivo(s) removido(s)!")
+                    print('Arquivo(s) removido(s)!')
                 except:
-                    print("Arquivo nao pode ser apagado.")
+                    print(f'Arquivo "{item}" nao pode ser apagado.')
         if os.path.isdir(os.path.join(file_path, item)):
             try:
                 os.rmdir(os.path.join(file_path, item))
             except:
-                print(f'''A pasta "{item}" contem arquivo(s)!''')
+                print(f'A pasta "{item}" contem arquivo(s)!')
