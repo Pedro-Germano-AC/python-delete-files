@@ -8,12 +8,12 @@ for item in files:
         if not(item.endswith(".pdf") or item.endswith(".jpeg")):
             try:
                 os.remove(os.path.join(file_path, item))
-                print("Arquivo(s) removido(s)!")
+                print(f'Arquivo "{item}" removido!')
             except:
-                print("Arquivo nao pode ser apagado.")
+                print(f'Arquivo "{item}" nao pode ser apagado.')
     if os.path.isdir(os.path.join(file_path, item)):
         try:
             os.rmdir(os.path.join(file_path, item))
         except:
-            print(f'''A pasta "{item}" contem arquivo(s)!''')
+            print(f'A pasta "{item}" contem arquivo(s)!')
 # print(os.listdir(file_path))    
